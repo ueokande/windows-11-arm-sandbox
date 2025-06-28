@@ -1,0 +1,11 @@
+name: Hello World Workflow
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: windows-11-arm
+
+    steps:
+    - name: Run a one-line script
+      run: echo Hello, world!
